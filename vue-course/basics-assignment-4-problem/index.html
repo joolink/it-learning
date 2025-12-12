@@ -9,7 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="https://unpkg.com/vue" defer></script>
     <script src="app.js" defer></script>
   </head>
   <body>
@@ -19,11 +19,12 @@
     <section id="assignment">
       <!-- 1) Fetch the user input and use it as a CSS class -->
       <!-- The entered class should be added to the below paragraph -->
-      <input type="text" />
+      <input v-model="userInputClass" type="text" />
       <!-- (available classes: "user1", "user2") -->
-      <p>
-        Style me!
-      </p>
+      <div >
+        <p :class="this.userInputClass">Style me!</p>
+      </div>
+
       <button>Toggle Paragraph</button>
       <!-- 2) Use the "visible" and "hidden" classes to show/ hide the above paragraph -->
       <!-- Clicking the button should toggle between the two options -->
