@@ -1,0 +1,22 @@
+.code-color-2 {
+  color: green;
+}
+
+h1 {
+  color: red;
+  font-family: sans-serif;
+}
+
+code {
+  color: red;
+  font-family: monospace;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+ol > li {
+  background-color: black;
+  color: white;
+}

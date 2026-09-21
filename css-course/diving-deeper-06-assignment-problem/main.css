@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+/* html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+} */
+
+body > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.box {
+  margin: 5px 2px;
+  border: 5px solid green;
+  padding: 5px 20px;
+  height: 300px;
+  width: 20%;
+}
+
+/* .box2 {
+  visibility: hidden;
+} */
+
+div:last-of-type {
+  border: 2px solid orange;
+}
+
+div:last-of-type:hover {
+  border: 2px solid blue;
+}
